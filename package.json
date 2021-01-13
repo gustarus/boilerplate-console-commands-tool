@@ -1,0 +1,44 @@
+{
+  "private": true,
+  "name": "boilerplate-console-commands-tool",
+  "version": "0.0.1",
+  "description": "Boilerplate for the commander npm js package to write console commands tool.",
+  "scripts": {
+    "watch": "./node_modules/.bin/tsc -w",
+    "build": "rm -rf ./dist && ./node_modules/.bin/tsc"
+  },
+  "main": "./dist/index.js",
+  "author": "Pavel Kondratenko <iam@kondratenko.me>",
+  "repository": "github:gustarus/boilerplate-console-commands-tool",
+  "license": "ISC",
+  "engines": {
+    "node": ">=8.11.1"
+  },
+  "keywords": [
+    "boilerplate",
+    "commander",
+    "console"
+  ],
+  "bin": {
+    "depler": "./dist/index.js"
+  },
+  "devDependencies": {
+    "@types/commander": "2.12.2",
+    "@types/fs-extra": "8.0.1",
+    "@types/lodash.merge": "^4.6.6",
+    "@types/node": "13.7.1",
+    "@types/readline-sync": "1.4.3",
+    "@types/yargs": "15.0.3",
+    "readline-sync": "1.4.10",
+    "typescript": "3.7.5"
+  },
+  "dependencies": {
+    "child_process": "1.0.2",
+    "colors": "1.4.0",
+    "commander": "4.1.1",
+    "fs": "0.0.1-security",
+    "fs-extra": "8.1.0",
+    "lodash.merge": "4.6.2",
+    "moment": "2.24.0"
+  }
+}
